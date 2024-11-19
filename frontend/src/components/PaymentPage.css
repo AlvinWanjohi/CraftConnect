@@ -1,0 +1,129 @@
+/* Base styles for the payment page */
+.payment-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .payment-page h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .order-summary {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-summary h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .order-summary ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .order-summary ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+  }
+  
+  .billing-info {
+    margin-bottom: 40px;
+  }
+  
+  .billing-info form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .billing-info label {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #333;
+  }
+  
+  .billing-info input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .billing-info input:focus {
+    border-color: #4CAF50; /* Green border on focus */
+    outline: none;
+  }
+  
+  .payment-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .payment-button button {
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .payment-button button:hover {
+    background-color: #218838;
+  }
+  
+  .payment-button button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .payment-button p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745;
+  }
+  
+  /* Responsive Design for small devices */
+  @media (max-width: 600px) {
+    .payment-page {
+      padding: 15px;
+    }
+  
+    .order-summary, .billing-info, .payment-button {
+      padding: 15px;
+    }
+  
+    .payment-button button {
+      width: 100%;
+      font-size: 16px;
+      padding: 12px 20px;
+    }
+  
+    .billing-info input {
+      font-size: 14px;
+    }
+  
+    .payment-button p {
+      font-size: 16px;
+    }
+  }
+  

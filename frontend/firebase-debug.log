@@ -1,0 +1,64 @@
+[debug] [2024-11-17T11:48:19.823Z] ----------------------------------------------------------------------
+[debug] [2024-11-17T11:48:19.825Z] Command:       /home/alvin/.nvm/versions/node/v20.17.0/bin/node /home/alvin/.nvm/versions/node/v20.17.0/bin/firebase init functions
+[debug] [2024-11-17T11:48:19.826Z] CLI Version:   13.25.0
+[debug] [2024-11-17T11:48:19.826Z] Platform:      linux
+[debug] [2024-11-17T11:48:19.826Z] Node Version:  v20.17.0
+[debug] [2024-11-17T11:48:19.826Z] Time:          Sun Nov 17 2024 14:48:19 GMT+0300 (East Africa Time)
+[debug] [2024-11-17T11:48:19.826Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-17T11:48:19.831Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-17T11:48:19.832Z] > authorizing via signed-in user (wanjohi8918@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/alvin/Documents/CraftConnect/frontend
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-11-17T11:48:31.295Z] Checked if tokens are valid: true, expires at: 1731847645443
+[debug] [2024-11-17T11:48:31.296Z] Checked if tokens are valid: true, expires at: 1731847645443
+[debug] [2024-11-17T11:48:31.298Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-11-17T11:48:32.074Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-11-17T11:48:32.074Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project craftconnect-3c6b8 (CraftConnect) 
+[info] 
+=== Functions Setup
+[debug] [2024-11-17T11:48:34.323Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-17T11:48:34.323Z] > authorizing via signed-in user (wanjohi8918@gmail.com)
+[debug] [2024-11-17T11:48:34.324Z] [iam] checking project craftconnect-3c6b8 for permissions ["firebase.projects.get"]
+[debug] [2024-11-17T11:48:34.324Z] Checked if tokens are valid: true, expires at: 1731847645443
+[debug] [2024-11-17T11:48:34.324Z] Checked if tokens are valid: true, expires at: 1731847645443
+[debug] [2024-11-17T11:48:34.325Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/craftconnect-3c6b8:testIamPermissions [none]
+[debug] [2024-11-17T11:48:34.325Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/craftconnect-3c6b8:testIamPermissions x-goog-quota-user=projects/craftconnect-3c6b8
+[debug] [2024-11-17T11:48:34.325Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/craftconnect-3c6b8:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-11-17T11:48:36.160Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/craftconnect-3c6b8:testIamPermissions 200
+[debug] [2024-11-17T11:48:36.160Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/craftconnect-3c6b8:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-11-17T11:48:36.162Z] Checked if tokens are valid: true, expires at: 1731847645443
+[debug] [2024-11-17T11:48:36.162Z] Checked if tokens are valid: true, expires at: 1731847645443
+[debug] [2024-11-17T11:48:36.162Z] Checked if tokens are valid: true, expires at: 1731847645443
+[debug] [2024-11-17T11:48:36.162Z] Checked if tokens are valid: true, expires at: 1731847645443
+[debug] [2024-11-17T11:48:36.162Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/craftconnect-3c6b8/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-11-17T11:48:36.162Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/craftconnect-3c6b8/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/craftconnect-3c6b8
+[debug] [2024-11-17T11:48:36.165Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/craftconnect-3c6b8/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-11-17T11:48:36.165Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/craftconnect-3c6b8/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/craftconnect-3c6b8
+[debug] [2024-11-17T11:48:38.107Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/craftconnect-3c6b8/services/runtimeconfig.googleapis.com 200
+[debug] [2024-11-17T11:48:38.107Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/craftconnect-3c6b8/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-11-17T11:48:38.109Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/craftconnect-3c6b8/services/cloudfunctions.googleapis.com 200
+[debug] [2024-11-17T11:48:38.110Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/craftconnect-3c6b8/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2024-11-17T11:48:38.110Z] Checked if tokens are valid: true, expires at: 1731847645443
+[debug] [2024-11-17T11:48:38.110Z] Checked if tokens are valid: true, expires at: 1731847645443
+[debug] [2024-11-17T11:48:38.110Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/craftconnect-3c6b8/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2024-11-17T11:48:38.111Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/craftconnect-3c6b8/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/craftconnect-3c6b8
+[debug] [2024-11-17T11:48:39.843Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/craftconnect-3c6b8/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2024-11-17T11:48:39.843Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/craftconnect-3c6b8/services/cloudfunctions.googleapis.com:enable [omitted]

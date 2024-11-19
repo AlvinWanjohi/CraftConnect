@@ -1,0 +1,142 @@
+/* General Page Styling */
+.email-notification-page {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center;
+}
+
+.email-notification-page h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.email-notification-page p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Notification Form Styling */
+.email-notification-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Spacing between options */
+}
+
+.notification-option {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between checkbox and label */
+}
+
+.notification-option input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #ff6a00; /* Custom checkbox color */
+  cursor: pointer;
+  transition: transform 0.2s ease; /* Smooth interaction */
+}
+
+.notification-option input[type="checkbox"]:focus {
+  outline: 2px solid #ff6a00; /* Focus ring for accessibility */
+  outline-offset: 2px;
+}
+
+.notification-option label {
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Save Button Styling */
+.save-button {
+  background-color: #4caf50; /* Green background */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.save-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+.save-button:focus {
+  outline: 2px solid #4caf50;
+  outline-offset: 2px;
+}
+
+/* Back Button Styling */
+.back-button {
+  background-color: #f44336; /* Red background */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #e53935; /* Darker red on hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+.back-button:focus {
+  outline: 2px solid #f44336;
+  outline-offset: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .email-notification-page {
+    padding: 15px;
+  }
+
+  .email-notification-page h1 {
+    font-size: 1.8rem;
+  }
+
+  .notification-option label {
+    font-size: 0.9rem;
+  }
+
+  .save-button,
+  .back-button {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .email-notification-page h1 {
+    font-size: 1.6rem; /* Smaller title for small screens */
+  }
+
+  .notification-option label {
+    font-size: 0.85rem; /* Adjust label size */
+  }
+
+  .save-button,
+  .back-button {
+    font-size: 0.95rem;
+    padding: 8px 10px; /* Compact buttons for smaller screens */
+  }
+}

@@ -1,0 +1,223 @@
+/* Header Bar Styling */
+.header-bar {
+  background: linear-gradient(to bottom, #030303, #ff6a00);
+  padding: 20px 50px;
+  position: relative;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Navigation Container Layout */
+.header-bar .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+  gap: 20px; /* Space between items */
+}
+
+/* Brand Name Styling */
+.header-bar .brand-name {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  animation: waveAnimation 3s ease-in-out infinite;
+  flex-grow: 1; /* Ensure brand name stretches to take available space */
+}
+
+/* Keyframes for Brand Animation */
+@keyframes waveAnimation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 20px; /* Adjust spacing between nav links */
+  align-items: center;
+  justify-content: flex-start; /* Align to the left */
+  flex-grow: 2; /* Allow nav links to take available space */
+}
+
+/* General Link Styles */
+.nav-link {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-link:hover {
+  color: #ffeb3b;
+  transform: scale(1.05);
+}
+
+.nav-link:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #ffeb3b;
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-out;
+}
+
+.nav-link:hover:before {
+  transform: scaleX(1);
+}
+
+/* Specific Button Classes to Remove Hover Effect (no `:before` for these buttons) */
+.shop-button.no-hover-effect:before,
+.testimonial-button.no-hover-effect:before {
+  content: none; /* Disable hover effect */
+}
+
+/* Search Container */
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 120px;
+  transition: width 0.3s ease, border-color 0.3s ease;
+}
+
+.search-input.expanded {
+  width: 200px;
+}
+
+.search-input:focus {
+  border-color: #ff8c00;
+}
+
+.search-button {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Sign-Up Link */
+.signup-link {
+  margin-left: auto;
+  background-color: #b98d54;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  margin-right: 10px; /* Add some spacing on the right */
+}
+
+/* Profile Emoji */
+.profile-emoji {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.profile-emoji:hover {
+  transform: scale(1.1);
+}
+
+/* Settings Icon */
+.settings-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.settings-button:hover {
+  transform: scale(1.1);
+  color: #ffeb3b;
+}
+
+/* Auth Buttons Container */
+.auth-buttons {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 20px; /* Space between buttons */
+  align-items: center; /* Center buttons horizontally */
+  justify-content: center; /* Center the buttons */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center; /* Center-align items */
+    padding: 0 20px; /* Add padding on sides for mobile */
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%; /* Ensure the nav links span the full width */
+    align-items: center; /* Center-align links */
+  }
+
+  .signup-link {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .search-container {
+    width: 100%;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .brand-name {
+    font-size: 2rem;
+    margin-bottom: 15px; /* Space between brand and nav */
+  }
+
+  /* Align profile and settings icons vertically */
+  .auth-buttons {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center; /* Center items */
+    align-items: center; /* Center-align the buttons */
+  }
+}

@@ -1,0 +1,135 @@
+/* General Container */
+.update-product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Header */
+.update-product-container h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Form */
+.update-product-form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input fields */
+.update-product-form input,
+.update-product-form textarea,
+.update-product-form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.update-product-form input:focus,
+.update-product-form textarea:focus,
+.update-product-form select:focus {
+  border-color: #f49f0a;
+  outline: none;
+}
+
+/* Form Labels */
+.update-product-form label {
+  font-weight: 500;
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+/* Textarea */
+.update-product-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Submit Button */
+.update-product-form .submit-btn {
+  background-color: #f49f0a;
+  color: white;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.update-product-form .submit-btn:hover {
+  background-color: #e68905;
+}
+
+/* Cancel Button */
+.update-product-form .cancel-btn {
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.update-product-form .cancel-btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 1rem;
+  margin-top: 10px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .update-product-form {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .update-product-form input,
+  .update-product-form textarea,
+  .update-product-form select {
+    font-size: 0.9rem;
+  }
+
+  .update-product-form .submit-btn,
+  .update-product-form .cancel-btn {
+    font-size: 1rem;
+  }
+}

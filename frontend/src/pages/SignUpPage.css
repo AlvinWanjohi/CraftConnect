@@ -1,0 +1,292 @@
+/* Main container layout */
+.signup-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh; /* Full screen height */
+  background-color: #f4f4f4; /* Light background for the page */
+}
+
+/* Background image section */
+.bg-image-container {
+  flex: 1; /* Occupies half the screen */
+  position: relative;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fills the container proportionally */
+  filter: brightness(0.6); /* Darkens the background image for better contrast with text */
+}
+
+/* Form section */
+.form-container {
+  flex: 1; /* Occupies the other half */
+  padding: 40px;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Logo section */
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 73px;
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Form header styles */
+.form-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.form-header p {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Form styling */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Input group */
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+label {
+  position: absolute;
+  top: -18px;
+  left: 14px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Show/Hide Password button */
+.show-hide-toggle {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #00bcd4;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.show-hide-toggle:hover {
+  color: #000000;
+}
+
+/* Newsletter section */
+.newsletter-section {
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.checkbox-wrapper input {
+  margin-right: 10px;
+}
+
+/* Submit button */
+.submit-button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Login button styling */
+.login-button {
+  background-color: #2196f3; /* Blue color */
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px; /* Space between buttons */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+  background-color: #1976d2; /* Darker blue for hover effect */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Terms & Conditions */
+.terms {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+}
+
+.terms a {
+  color: #080808;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.terms a:hover {
+  color: #0c0c0c;
+}
+
+/* Already a member section */
+.already-member {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.divider {
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.back-to-signin-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  color: #333;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-signin-link:hover {
+  background-color: #e0e0e0;
+}
+
+/* Forgot Password link */
+.forgot-password-link {
+  color: #00bcd4;
+  font-size: 0.9rem;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.forgot-password-link:hover {
+  color: #004a78;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signup-container {
+    flex-direction: column;
+  }
+
+  .bg-image-container {
+    height: 200px; /* Adjust background height */
+  }
+
+  .form-container {
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .logo-container {
+    margin-bottom: 15px;
+  }
+
+  .form-header h2 {
+    font-size: 1.75rem;
+  }
+
+  .input-field {
+    font-size: 0.9rem;
+  }
+
+  .submit-button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .login-button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+/* Larger screens */
+@media (min-width: 1024px) {
+  .form-container {
+    padding: 50px;
+  }
+
+  .input-field {
+    font-size: 1.1rem;
+  }
+
+  .submit-button {
+    font-size: 1.2rem;
+  }
+
+  .login-button {
+    font-size: 1.2rem;
+  }
+}

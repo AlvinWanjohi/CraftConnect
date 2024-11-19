@@ -1,0 +1,265 @@
+/* ---------------------
+   General Styles
+--------------------- */
+:root {
+  --primary-color: #e02012;
+  --secondary-color: #d4e157;
+  --background-color: #f4f4f4;
+  --text-color: #333;
+  --accent-color: #f52a23;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+#root {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+button:focus, .cta-button:focus {
+  outline: 2px solid var(--secondary-color);
+  outline-offset: 4px;
+}
+
+/* ---------------------
+   Hero Section
+--------------------- */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: brightness(0.7);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #e4391a;
+  transform: translateY(-3px);
+}
+
+/* ---------------------
+   About Section
+--------------------- */
+.about-section {
+  background-color: var(--background-color);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.learn-more {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* ---------------------
+   Featured Artisans
+--------------------- */
+.featured-artisans {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.featured-artisans h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.artisan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.artisan-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.artisan-card:hover {
+  transform: translateY(-5px);
+}
+
+.artisan-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.profile-link {
+  color: var(--primary-color);
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+/* ---------------------
+   Popular Products Section
+--------------------- */
+.popular-products {
+  padding: 60px 20px;
+  background-color: var(--background-color);
+}
+
+.popular-products h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.view-product-link {
+  color: var(--primary-color);
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+/* ---------------------
+   Testimonials Section
+--------------------- */
+.testimonials {
+  background-color: var(--background-color);
+  padding: 60px 20px;
+}
+
+.testimonial-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.comment-form button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+/* ---------------------
+   Footer
+--------------------- */
+footer {
+  background-color: var(--primary-color);
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0 10px;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}

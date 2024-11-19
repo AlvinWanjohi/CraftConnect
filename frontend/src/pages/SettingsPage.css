@@ -1,0 +1,211 @@
+/* Color Variables for Consistency */
+:root {
+  --primary-color: #ff6a00; /* Accent color */
+  --secondary-color: #333; /* Default text color */
+  --light-bg-color: #f9f9f9; /* Background color */
+  --divider-color: #ddd; /* Divider line color */
+  --hover-bg-color: #f0f0f0; /* Hover background */
+  --danger-color: #f44336; /* Danger (logout button) */
+  --danger-hover-color: #e53935; /* Danger hover */
+  --badge-color: #ff3b30; /* Notification badge */
+  --icon-color: var(--primary-color);
+}
+
+/* General Page Styling */
+.settings-page {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--light-bg-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: var(--secondary-color);
+}
+
+/* Settings Title */
+.settings-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+/* Section Styling */
+.settings-section {
+  margin-bottom: 30px;
+  padding: 10px 0;
+  border-top: 1px solid var(--divider-color);
+}
+
+.settings-section:first-child {
+  border-top: none;
+}
+
+/* Section Title Styling */
+.section-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border-left: 4px solid var(--primary-color);
+}
+
+/* Settings List Styling */
+.settings-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Settings Item Styling */
+.settings-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-bottom: 1px solid var(--divider-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.settings-item:last-child {
+  border-bottom: none;
+}
+
+.settings-item:hover,
+.settings-item:focus {
+  background-color: var(--hover-bg-color);
+  transform: translateY(-2px);
+  border-radius: 5px;
+  outline: none; /* Remove default outline */
+}
+
+.settings-item:focus {
+  box-shadow: 0 0 0 2px var(--primary-color); /* Add focus indicator */
+}
+
+/* Notification Badge */
+.notification-badge {
+  background-color: var(--badge-color);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 2px 8px;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+/* Item Elements */
+.item-icon {
+  font-size: 1.5rem;
+  margin-right: 15px;
+  color: var(--icon-color);
+}
+
+.item-name {
+  flex-grow: 1;
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+
+.item-arrow {
+  font-size: 1.2rem;
+  color: #999;
+}
+
+/* Log Out Button */
+.logout-button {
+  background-color: var(--danger-color);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 30px;
+}
+
+.logout-button:hover,
+.logout-button:focus {
+  background-color: var(--danger-hover-color);
+  transform: translateY(-2px);
+  outline: none; /* Remove default outline */
+}
+
+.logout-button:focus {
+  box-shadow: 0 0 0 2px var(--danger-hover-color); /* Focus indicator */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .settings-page {
+    padding: 15px;
+  }
+
+  .settings-item {
+    padding: 12px 15px;
+  }
+
+  .settings-title {
+    font-size: 1.8rem;
+  }
+
+  .section-title {
+    font-size: 1rem;
+  }
+
+  .logout-button {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+
+  .notification-badge {
+    background-color: #ff0000; /* Red */
+    color: white;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  
+  
+}
+
+@media (max-width: 480px) {
+  .settings-title {
+    font-size: 1.6rem;
+  }
+
+  .section-title {
+    font-size: 0.9rem;
+  }
+
+  .settings-item {
+    padding: 10px 12px;
+  }
+
+  .item-icon {
+    font-size: 1.2rem;
+  }
+
+  .logout-button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .notification-badge {
+    font-size: 0.65rem;
+    padding: 1px 4px;
+  }
+}

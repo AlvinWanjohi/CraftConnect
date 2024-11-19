@@ -1,0 +1,110 @@
+/* General Styles for the Contact Us Page */
+.contact-us-container {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Contact Form Styles */
+.contact-form-section {
+    background-color: #ffffff;
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Input Group Styles */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input-group label {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    resize: vertical;
+}
+
+/* Placeholder Styles */
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Textarea Height */
+.input-group textarea {
+    height: 150px;
+}
+
+/* Submit Button Styles */
+.submit-button {
+    padding: 14px;
+    font-size: 1.2rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+.submit-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Submit Status Styles */
+.submit-status {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* Success Message */
+.submit-status.success {
+    background-color: #d4e157;
+    color: #333;
+}
+
+/* Error Message */
+.submit-status.error {
+    background-color: #e57373;
+    color: #fff;
+}
